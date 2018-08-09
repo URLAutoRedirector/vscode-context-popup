@@ -9,12 +9,12 @@ export function activate(context: vscode.ExtensionContext) {
 
     // Use the console to output diagnostic information (console.log) and errors (console.error)
     // This line of code will only be executed once when your extension is activated
-    console.log('Congratulations, your extension "motor-search" is now active!');
+    console.log('Congratulations, your extension "vscode-context-popup" is now active!');
 
-    context.subscriptions.push(vscode.commands.registerCommand('motorSearch.searchGeneral', () => {
+    context.subscriptions.push(vscode.commands.registerCommand('contextPopup.doAction', () => {
         let activeEditor = vscode.window.activeTextEditor!;
         if (!activeEditor) {
-            console.error('motor-search: no active editor');
+            console.error('[context-popup] no active editor');
             return;
         }
         let keyword = activeEditor.document.getText(activeEditor.selection);

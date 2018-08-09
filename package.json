@@ -1,24 +1,28 @@
 {
-    "name": "motor-search",
-    "displayName": "motor-search",
+    "name": "vscode-context-popup",
+    "displayName": "vscode-context-popup",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "crispgm",
     "engines": {
         "vscode": "^1.25.0"
+    },
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/URLAutoRedirector/vscode-context-popup.git"
     },
     "categories": [
         "Other"
     ],
     "activationEvents": [
-        "onCommand:motorSearch.searchGeneral"
+        "onCommand:contextPopup.doAction"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "motorSearch.searchGeneral",
-                "title": "MotorSearch"
+                "command": "contextPopup.doAction",
+                "title": "Popup"
             }
         ]
     },
