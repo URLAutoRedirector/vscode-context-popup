@@ -2,7 +2,7 @@
     "name": "vscode-context-popup",
     "displayName": "vscode-context-popup",
     "description": "",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "publisher": "crispgm",
     "engines": {
         "vscode": "^1.25.0"
@@ -19,6 +19,25 @@
     ],
     "main": "./out/extension",
     "contributes": {
+        "configuration": [
+			{
+				"title": "Context Popup Configuration",
+				"properties": {
+					"popup.urlprefix": {
+						"type": "string",
+						"default": "https://www.google.com/search?q=",
+						"description": "URL Prefix",
+						"scope": "window"
+					},
+					"conf.resource.insertEmptyLastLine": {
+						"type": "object",
+						"default": {},
+						"description": "Resource configurtion: Configure files using glob patterns to have an empty last line always",
+						"scope": "resource"
+					}
+				}
+			}
+		],
         "commands": [
             {
                 "command": "contextPopup.doAction",

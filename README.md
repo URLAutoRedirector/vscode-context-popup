@@ -1,18 +1,18 @@
-# README
+# vscode-context-popup
 
-VSCode Extension that works as URLAutoSplicer.
+VS Code Extension that works as URLAutoSplicer.
 
 ## Features
 
 ## Extension Settings
 
-TODO
+`popup.urlprefix` to indicate URL prefix. e.g. `https://www.google.com/search?q=`
 
 ## Release Notes
 
 ### 1.0.0
 
-Initial release
+* Initial release
 
 ## License
 
